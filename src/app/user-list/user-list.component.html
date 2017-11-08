@@ -1,0 +1,7 @@
+<ul>
+  <!--1. user-list <li *ngFor="let friend of nameList">hello {{friend}}! </li>-->
+
+  2. hello, <!-- 配合@Input() 使用[],将值传入子组件(其中"nameItem来自ngFor中, [name]指<app-user-item>组件上的Input") -->
+  <app-user-item *ngFor="let nameItem of nameList" [name]="nameItem">
+  </app-user-item>
+</ul>
