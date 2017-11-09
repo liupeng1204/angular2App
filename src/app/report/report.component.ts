@@ -39,6 +39,17 @@ export class ReportComponent implements OnInit {
     let tableReport: number[]=[1,2,3,4,5];
     let tableReportInstance = new TableReport(report, tableReport);
     tableReportInstance.run();
+
+
+    // TypeScript模板字符串 / 多行字符串
+    let strA = "A";
+    let strB = "B";
+    let tsStr =
+      `Hello! 
+          ${strA},
+          ${strB}
+      `;
+    console.log(tsStr);
   }
 
   ngOnInit() {
